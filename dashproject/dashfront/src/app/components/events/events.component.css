@@ -1,0 +1,85 @@
+.titre {
+	font-size: 20px;
+    color: black;
+    font-weight: bold;
+}
+
+.date {
+	font-size: 20px;
+    color: black;
+    font-weight: bold;
+}
+
+.date {
+	font-size: 15px;
+    color: grey;
+    font-weight: bold;
+}
+
+.adresse {
+	font-size: 15px;
+    margin-top: 50pxpx;
+    color: grey;
+}
+
+.description {
+	font-size: 15px;
+    color: black;
+}
+  
+section {
+    transform: rotate(0deg);
+    display: flex;
+    width: 400px;
+    height: 160px;
+    background: lightgray;
+}
+
+#conteneur{
+    display: flex;
+}
+
+.element{
+    margin-left: 15px;
+}
+
+/* ------------------- */
+
+.styled {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    /* text-shadow: 1px 1px 1px #000; */
+    border-radius: 10px;
+    background-color: rgb(228, 228, 228);
+    background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.styled:hover {
+    background-color: grey;
+}
+
+.styled:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+.element_event {
+    margin-right: 30%;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+.element_bouton {
+    
+}

@@ -1,0 +1,66 @@
+.affiche{
+    text-align: center;
+
+}
+.nomActeur{
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.description{
+    margin-left: 75px;
+
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+.slider{
+    width: 300px;
+    height: 450px;
+    overflow: hidden;
+    
+}
+.slides{
+    width: calc(300px *3);
+    animation: glisse 15s infinite;
+}
+
+.desc{
+    width: 300px;
+    height: 150px;
+    overflow: hidden;
+}
+.text{
+    float: left;
+    width: 280px;
+    margin-left: 20px;
+    font-family: 'Raleway', sans-serif;
+
+
+}
+
+.slide{
+    float: left;
+}
+@keyframes glisse{
+    0%{
+        transform: translateX(0);
+    }
+    10%{
+        transform: translateX(0);
+    }
+    33%{
+        transform: translateX(-300px);
+    }
+    43%{
+        transform: translateX(-300px);
+    }
+    66%{
+        transform: translateX(-600px);
+    }
+    76%{
+        transform: translateX(-600px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
