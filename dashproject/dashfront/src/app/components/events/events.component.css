@@ -43,6 +43,8 @@ section {
     margin-left: 15px;
 }
 
+
+
 /* ------------------- */
 
 .styled {
@@ -51,11 +53,11 @@ section {
     padding: 0 20px;
     font-size: 1rem;
     text-align: center;
-    color: black;
+    color: white;
     font-weight: bold;
     /* text-shadow: 1px 1px 1px #000; */
     border-radius: 10px;
-    background-color: rgb(228, 228, 228);
+    background-color:#893010;
     background-image: linear-gradient(to top left,
                                       rgba(0, 0, 0, .2),
                                       rgba(0, 0, 0, .2) 30%,
@@ -77,9 +79,8 @@ section {
     margin-right: 30%;
     font-size: 20px;
     font-weight: bold;
-    color: black;
+    color: white;
 }
 
 .element_bouton {
-    
 }
