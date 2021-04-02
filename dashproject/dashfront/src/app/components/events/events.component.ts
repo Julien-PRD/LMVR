@@ -4,7 +4,7 @@ import { ITS_JUST_ANGULAR } from '@angular/core/src/r3_symbols';
 import { AppServiceService } from 'src/app/app-service.service';
 
 var lieu :String;
-declare const myTest: any;
+declare const changerEvent: any;
 
 @Component({
   selector: 'app-events',
@@ -21,8 +21,12 @@ export class EventsComponent implements OnInit {
   totalAngularPackages: any;
   constructor(private http: HttpClient) {}
 
-  onClick(events1: any, events2: any, events3: any, events4: any, events5: any, events6: any, events7: any, events8: any, events9: any, events10: any, events11: any, events12: any, events13: any, events14: any, events15: any){
-    myTest(events1,events2,events3,events4,events5,events6,events7,events8,events9,events10,events11,events12,events13,events14,events15);
+  onClickArriere(indice: any){
+    changerEvent(indice,this.events.evenement1,this.events.evenement2,this.events.evenement3);
+  }
+
+  onClickAvant(indice: any){
+    changerEvent(indice,this.events.evenement1,this.events.evenement2,this.events.evenement3);
   }
 
   ngOnInit() {

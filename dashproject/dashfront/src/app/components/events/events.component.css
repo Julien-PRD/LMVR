@@ -43,6 +43,14 @@ section {
     margin-left: 15px;
 }
 
+.compteur{
+    margin-left: 95%;
+    margin-right: 10%;
+    margin-top: 9px;
+    color: black;
+    font-size: 25px;
+}
+
 
 
 /* ------------------- */
@@ -76,7 +84,8 @@ section {
 }
 
 .element_event {
-    margin-right: 30%;
+    margin-right: 36%;
+    margin-left: 33%;
     font-size: 20px;
     font-weight: bold;
     color: white;
