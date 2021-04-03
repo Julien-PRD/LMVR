@@ -6,6 +6,7 @@ import { AppServiceService } from 'src/app/app-service.service';
 var lieu :String;
 declare const changerEvent: any;
 
+
 @Component({
   selector: 'app-events',
   templateUrl: './events.component.html',
@@ -21,12 +22,8 @@ export class EventsComponent implements OnInit {
   totalAngularPackages: any;
   constructor(private http: HttpClient) {}
 
-  onClickArriere(indice: any){
-    changerEvent(indice,this.events.evenement1,this.events.evenement2,this.events.evenement3);
-  }
-
-  onClickAvant(indice: any){
-    changerEvent(indice,this.events.evenement1,this.events.evenement2,this.events.evenement3);
+  onClick(sens: any){
+    changerEvent(sens,this.events.evenement1,this.events.evenement2,this.events.evenement3);
   }
 
   ngOnInit() {

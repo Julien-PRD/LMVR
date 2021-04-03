@@ -1,20 +1,9 @@
 <body>
   <div class="message-p pn2">
-    <!-- <div class="message-header">
-      <div class="element_bouton"><input class="favorite styled" (click)="onClickArriere(events.evenement1[0], events.evenement1[1], events.evenement1[2], events.evenement1[3], events.evenement1[4],
-                                                                                  events.evenement2[0], events.evenement2[1], events.evenement2[2], events.evenement2[3], events.evenement2[4],
-                                                                                  events.evenement3[0], events.evenement3[1], events.evenement3[2], events.evenement3[3], events.evenement3[4]
-                                                                                  )" type="button" value="Précédent"> </div>
-      <div class="element_event">Evènements</div>
-      <div class="element_bouton"><input class="favorite styled" (click)="onClickAvant(events.evenement1[0], events.evenement1[1], events.evenement1[2], events.evenement1[3], events.evenement1[4],
-                                                                                  events.evenement2[0], events.evenement2[1], events.evenement2[2], events.evenement2[3], events.evenement2[4],
-                                                                                  events.evenement3[0], events.evenement3[1], events.evenement3[2], events.evenement3[3], events.evenement3[4]
-                                                                                  )" type="button" value="Suivant"> </div>
-    </div> -->
     <div class="message-header">
-      <div class="element_bouton"><input class="favorite styled" (click)="onClickArriere(-1)" type="button" value="Précédent"> </div>
+      <div class="element_bouton"><input class="favorite styled" (click)="onClick(-1)" type="button" value="Précédent"> </div>
       <div class="element_event">Evènements</div>
-      <div class="element_bouton"><input class="favorite styled" (click)="onClickAvant(1)" type="button" value="Suivant"> </div>
+      <div class="element_bouton"><input class="favorite styled" (click)="onClick(1)" type="button" value="Suivant"> </div>
     </div>
     <div id="conteneur">
 
