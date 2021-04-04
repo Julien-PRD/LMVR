@@ -1,6 +1,6 @@
 num_event = 1;
 
-/* Systeme de changement d'évenement en fonction d'un sens qui est défini par le bouton "suivant" ou "précédent" */
+/* Systeme de changement d'évenement en fonction d'un sens qui est défini par le bouton "suivant" (sens = 1) ou "précédent" (sens = -1) */
 function changerEvent(sens, evenement1, evenement2, evenement3){
 
     /* Si le sens est égale à 1 (vers l'avant), alors on incrémente le numéro d'evenement */
