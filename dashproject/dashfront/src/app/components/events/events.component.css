@@ -26,6 +26,12 @@
 	font-size: 15px;
     color: black;
 }
+
+.liens {
+	font-size: 15px;
+    color:blue;
+    text-decoration: underline;
+}
   
 section {
     transform: rotate(0deg);

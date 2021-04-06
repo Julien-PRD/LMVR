@@ -13,9 +13,9 @@ declare const changerEvent: any;
 export class EventsComponent implements OnInit {
   /* Variable de stockage sous forme de tableau des événements */
   events = {
-    evenement1: [" ", " "," ", " ", " "],
-    evenement2: [" ", " "," ", " ", " "],
-    evenement3: [" ", " "," ", " ", " "]
+    evenement1: [" ", " "," ", " ", " ", " "],
+    evenement2: [" ", " "," ", " ", " ", " "],
+    evenement3: [" ", " "," ", " ", " ", " "]
   };
   totalAngularPackages: any;
   constructor(private http: HttpClient) {}
@@ -38,18 +38,24 @@ export class EventsComponent implements OnInit {
       this.events.evenement1[2] = data.records[0].fields.address;     /* Récupération de l'adresse de l'événement */
       this.events.evenement1[3] = data.records[0].fields.image;       /* Récupération de l'image de l'événement */
       this.events.evenement1[4] = data.records[0].fields.description; /* Récupération de la description de l'événement */
+      this.events.evenement1[5] = data.records[0].fields.link;        /* Récupération du lien de l'événement */
+
 
       this.events.evenement2[0] = data.records[1].fields.title;       /* Récupération du titre de l'événement */
       this.events.evenement2[1] = data.records[1].fields.date_start;  /* Récupération de la date de début de l'événement */
       this.events.evenement2[2] = data.records[1].fields.address;     /* Récupération de l'adresse de l'événement */
       this.events.evenement2[3] = data.records[1].fields.image;       /* Récupération de l'image de l'événement */
       this.events.evenement2[4] = data.records[1].fields.description; /* Récupération de la description de l'événement */
+      this.events.evenement2[5] = data.records[1].fields.link;        /* Récupération du lien de l'événement */
+
 
       this.events.evenement3[0] = data.records[2].fields.title;       /* Récupération du titre de l'événement */
-      this.events.evenement3[1] = data.records[2].fields .date_start; /* Récupération de la date de début de l'événement */
+      this.events.evenement3[1] = data.records[2].fields.date_start;  /* Récupération de la date de début de l'événement */
       this.events.evenement3[2] = data.records[2].fields.address;     /* Récupération de l'adresse de l'événement */
       this.events.evenement3[3] = data.records[2].fields.image;       /* Récupération de l'image de l'événement */
       this.events.evenement3[4] = data.records[2].fields.description; /* Récupération de la description de l'événement */
+      this.events.evenement3[5] = data.records[2].fields.link;        /* Récupération du lien de l'événement */
+
 
     })
   }
