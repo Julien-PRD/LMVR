@@ -37,32 +37,23 @@
             <!--CUSTOM CHART START sssssssssssssssssssssssssssssssssssssssssssssssssss-->
             <!--custom chart end-->
             <div class="row mt">
-              <!-- SERVER STATUS PANELS -->
-              <div class="col-md-4 col-sm-4 mb">
+              <!-- API meteo -->
+              <div class="col-md-6 col-sm-6 mb">
                 <app-meteo></app-meteo>
-
-              </div>
-              <!-- /col-md-4-->
-              <div class="col-md-4 col-sm-4 mb">
-
-             <app-dropbox></app-dropbox>
-            </div>
+              </div>             
               <!-- /col-md-4 -->
-              <div class="col-md-4 col-sm-4 mb">
-                <!-- REVENUE PANEL -->
-               <app-revunue></app-revunue>
+              <div class="col-md-6 col-sm-6 mb">
+                <!-- API covid -->
+               <app-covid></app-covid>
               </div>
               <!-- /col-md-4 -->
             </div>
             <!-- /row -->
             <div class="row">
-              <!-- /col-md-4-->
-              <!-- DIRECT MESSAGE PANEL -->
               <div class="col-md-12 mb">
+                <!-- API evenement -->
                 <app-events></app-events>
-                <!-- /Message Panel-->
               </div>
-              <!-- /col-md-8  -->
             </div>
           </div>
           <!-- /col-lg-9 END SECTION MIDDLE -->
@@ -70,8 +61,9 @@
               RIGHT SIDEBAR CONTENT
               *********************************************************************************************************************************************************** -->
           <div class="col-lg-3 ds">
-           <app-infolateral></app-infolateral>
-          </div>
+            <!-- API film -->
+           <app-film></app-film>
+        </div>
           <!-- /col-lg-3 -->
         </div>
         <!-- /row -->

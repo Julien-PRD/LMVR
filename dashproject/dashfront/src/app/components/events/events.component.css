@@ -84,12 +84,17 @@ section {
 }
 
 .element_event {
-    margin-right: 36%;
-    margin-left: 33%;
+    width: 72%;
     font-size: 20px;
     font-weight: bold;
     color: white;
 }
 
-.element_bouton {
+.element_bouton1{
+    width: 15%;
+}
+
+.element_bouton2{
+    width: 15%;
+
 }

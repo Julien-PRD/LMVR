@@ -234,7 +234,7 @@ ul.top-menu > li > .logout {
     width: 210px;
     height: 100%;
     position: fixed;
-    background: #2f323a;
+    background: #893010;
 }
 
 #sidebar h5 {
@@ -415,7 +415,7 @@ ul.sidebar-menu li a.active i {
 }
 
 .black-bg {
-    background: #893010;
+    background: #cc4e0f;
     border-bottom: 1px solid #393d46;
 }
 
@@ -1254,7 +1254,6 @@ PANELS CONFIGURATIONS
 
 /* Instagram Panel*/
 .instagram-panel {
-	background: url(../assets/img/instagram.jpg) no-repeat center top;
 	text-align: center;
 	background-position: center center;
 }
@@ -1298,7 +1297,6 @@ PANELS CONFIGURATIONS
 
 /* Soptify Panel */
 #spotify {
-	background: url(../assets/img/lorde.jpg) no-repeat center top;
 	margin-top: -15px;
 	background-attachment: relative;
 	background-position: center center;
@@ -1342,7 +1340,6 @@ PANELS CONFIGURATIONS
 
 /* BLOG PANEL */
 #blog-bg {
-	background: url(../assets/img/blog-bg.jpg) no-repeat center top;
 	margin-top: -15px;
 	background-attachment: relative;
 	background-position: center center;
@@ -1467,7 +1464,6 @@ PANELS CONFIGURATIONS
 /* PROFILE PANELS */
 /* Profile 01*/
 #profile-01 {
-	background: url(../assets/img/profile-01.jpg) no-repeat center top;
 	margin-top: -15px;
 	background-attachment: relative;
 	background-position: center center;
@@ -1515,7 +1511,6 @@ PANELS CONFIGURATIONS
 
 /* Profile 02*/
 #profile-02 {
-	background: url(../assets/img/profile-02.jpg) no-repeat center top;
 	margin-top: -15px;
 	background-attachment: relative;
 	background-position: center center;
@@ -1700,7 +1695,6 @@ PANELS CONFIGURATIONS
 
 .project:hover .photo-wrapper {
   background-color: #4ECDC4;
-	background-image:url(../assets/img/zoom.png);
 	background-repeat:no-repeat;
 	background-position:center;
 	top: 0;
@@ -1796,8 +1790,7 @@ label {
     position: relative;
     text-align: left;
     width: 80px;
-    -webkit-mask: url('../assets/img/mask.png') 0 0 no-repeat;
-    mask: url('../assets/img/mask.png') 0 0 no-repeat;
+ 
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -1903,8 +1896,7 @@ label {
 .switch-square {
     border-radius: 6px;
     -webkit-border-radius: 6px;
-    -webkit-mask: url('../assets/img/mask.png') 0 0 no-repeat;
-    mask: url('../assets/img/mask.png') 0 0 no-repeat;
+   
 }
 .switch-square > div.switch-off label {
     border-color: #7f8c9a;

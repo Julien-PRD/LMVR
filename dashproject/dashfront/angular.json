@@ -39,7 +39,6 @@
               "src/cssDashio/to-do.css",
               "src/cssDashio/zabuto_calendar.css",
               "src/cssDashio/font-awesome.css"
-              
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
