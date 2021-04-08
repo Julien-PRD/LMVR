@@ -1,5 +1,5 @@
 .titre {
-	font-size: 20px;
+	font-size: 23px;
     color: black;
     font-weight: bold;
 }
@@ -11,24 +11,24 @@
 }
 
 .date {
-	font-size: 15px;
+	font-size: 20px;
     color: grey;
     font-weight: bold;
 }
 
 .adresse {
-	font-size: 15px;
+	font-size: 20px;
     margin-top: 50pxpx;
     color: grey;
 }
 
 .description {
-	font-size: 15px;
+	font-size: 18px;
     color: black;
 }
 
 .liens {
-	font-size: 15px;
+	font-size: 18px;
     color:blue;
     text-decoration: underline;
 }
@@ -50,11 +50,8 @@ section {
 }
 
 .compteur{
-    margin-left: 95%;
-    margin-right: 10%;
-    margin-top: 9px;
-    color: black;
-    font-size: 25px;
+    color: white;
+    font-size: 16px;
 }
 
 
@@ -81,7 +78,7 @@ section {
 }
 
 .styled:hover {
-    background-color: grey;
+    background-color: #cc4e0f;
 }
 
 .styled:active {
@@ -91,16 +88,18 @@ section {
 
 .element_event {
     width: 72%;
-    font-size: 20px;
+    font-size: 23px;
     font-weight: bold;
     color: white;
 }
 
 .element_bouton1{
+    margin-top: 0.4%;
     width: 15%;
 }
 
 .element_bouton2{
+    margin-top: 0.4%;
     width: 15%;
 
 }

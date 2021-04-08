@@ -4,7 +4,7 @@
 
       <!-- On retrouve sur ce bandeau le titre de l'API ainsi que deux bouton "suivant" et "précédent" qui permettent de naviguer entre les événements -->
       <div class="element_bouton1"><input class="favorite styled" (click)="onClick(-1)" type="button" value="Précédent"> </div>
-      <div class="element_event">Evènements</div>
+      <div class="element_event">ÉVÉNEMENTS<div id="cmp" class="compteur"> 1/3</div></div>
       <div class="element_bouton2"><input class="favorite styled" (click)="onClick(1)" type="button" value="Suivant"> </div>
     </div>
     
@@ -19,11 +19,12 @@
         <div id="date" class="date">{{events.evenement1[1]}}</div>
         <div id="adresse" class="adresse">{{events.evenement1[2]}}</div>
         <div id="description" class="description">{{events.evenement1[4]}}</div>
-        <div class="liens"><a class="liens" id="liens" href={{events.evenement1[5]}}>Plus d'information</a></div>
+        <div class="liens"><a class="liens" id="liens" href={{events.evenement1[5]}} target="_blank">Plus d'information</a></div>
+        <br>
+        <!-- Un compteur qui permet de savoir sur quel événement l'utilisateur se trouve -->
+        
       </div>
     </div>
-    <br><br><br>
-    <!-- Un compteur qui permet de savoir sur quel événement l'utilisateur se trouve -->
-    <div id="cmp" class="compteur">1/3</div>
+    
   </div>
 </body>

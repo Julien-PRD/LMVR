@@ -15,7 +15,7 @@ export class EventsComponent implements OnInit {
   events = {
     evenement1: [" ", " "," ", " ", " ", " "],
     evenement2: [" ", " "," ", " ", " ", " "],
-    evenement3: [" ", " "," ", " ", " ", " "]
+    evenement3: [" ", " "," ", " ", " ", " "] 
   };
   totalAngularPackages: any;
   constructor(private http: HttpClient) {}

@@ -1,5 +1,9 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { from } from 'rxjs';
+
+declare const deroulementFilm: any;
+
 
 @Component({
   selector: 'app-film',
@@ -9,129 +13,141 @@ import { Component, OnInit } from '@angular/core';
 export class FilmComponent implements OnInit {
 
   film = {
-    affiche:'',
-    affiche1:'',
-    affiche2:'',
-    affiche3:'',
-    affiche4:'',
-    affiche5:'',
-    affiche6:'',
-    affiche7:'',
-    affiche8:'',
-    affiche9:'',
-    titre:'',
-    titre1:'',
-    titre2:'',
-    titre3:'',
-    titre4:'',
-    titre5:'',
-    titre6:'',
-    titre7:'',
-    titre8:'',
-    titre9:'',
-    dateDeSortie:'',
-    dateDeSortie1:'',
-    dateDeSortie2:'',
-    dateDeSortie3:'',
-    dateDeSortie4:'',
-    dateDeSortie5:'',
-    dateDeSortie6:'',
-    dateDeSortie7:'',
-    dateDeSortie8:'',
-    dateDeSortie9:'',
-    description:'',
-    description1:'',
-    description2:'',
-    description3:'',
-    description4:'',
-    description5:'',
-    description6:'',
-    description7:'',
-    description8:'',
-    description9:'',
-
+    affiche:Array(),
+    titre:Array(),
+    dateDeSortie:Array(),
+    description:Array(),
     nbfilm: ''
 
   };
 
+  film2=[{
+    affiche:"",
+    titre:"",
+    dateDeSortie:"",
+    description:""
+  }
+  ]
   
     totalAngularPackages: any;
     constructor(private http: HttpClient) {}
-  
-   
     
-  
     ngOnInit() {
       this.http.get<any>('https://api.themoviedb.org/3/movie/now_playing?api_key=5bf1753ef6fc941997c9f4c033fcaf20&language=fr-FR&page=1').subscribe(data => {
         this.totalAngularPackages = data.total;
         console.log(data);
 
+      this.film2 = [{
+        affiche: data.results[0].poster_path,
+        titre: data.results[0].title,
+        dateDeSortie: data.results[0].release_date,
+        description: data.results[0].overview
+      }, {
+        affiche: data.results[1].poster_path,
+        titre: data.results[1].title,
+        dateDeSortie: data.results[1].release_date,
+        description: data.results[1].overview
+      }, {
+        affiche: data.results[2].poster_path,
+        titre: data.results[2].title,
+        dateDeSortie: data.results[2].release_date,
+        description: data.results[2].overview
+      }, {
+        affiche: data.results[3].poster_path,
+        titre: data.results[3].title,
+        dateDeSortie: data.results[3].release_date,
+        description: data.results[3].overview
+      }, {
+        affiche: data.results[4].poster_path,
+        titre: data.results[4].title,
+        dateDeSortie: data.results[4].release_date,
+        description: data.results[4].overview
+      }, {
+        affiche: data.results[5].poster_path,
+        titre: data.results[5].title,
+        dateDeSortie: data.results[5].release_date,
+        description: data.results[5].overview
+      }, {
+        affiche: data.results[6].poster_path,
+        titre: data.results[6].title,
+        dateDeSortie: data.results[6].release_date,
+        description: data.results[6].overview
+      }, {
+        affiche: data.results[7].poster_path,
+        titre: data.results[7].title,
+        dateDeSortie: data.results[7].release_date,
+        description: data.results[7].overview
+      }, {
+        affiche: data.results[8].poster_path,
+        titre: data.results[8].title,
+        dateDeSortie: data.results[8].release_date,
+        description: data.results[8].overview
+      }, {
+        affiche: data.results[9].poster_path,
+        titre: data.results[9].title,
+        dateDeSortie: data.results[9].release_date,
+        description: data.results[9].overview
+      }, {
+        affiche: data.results[10].poster_path,
+        titre: data.results[10].title,
+        dateDeSortie: data.results[10].release_date,
+        description: data.results[10].overview
+      }, {
+        affiche: data.results[11].poster_path,
+        titre: data.results[11].title,
+        dateDeSortie: data.results[11].release_date,
+        description: data.results[11].overview
+      }, {
+        affiche: data.results[12].poster_path,
+        titre: data.results[12].title,
+        dateDeSortie: data.results[12].release_date,
+        description: data.results[12].overview
+      }, {
+        affiche: data.results[13].poster_path,
+        titre: data.results[13].title,
+        dateDeSortie: data.results[13].release_date,
+        description: data.results[13].overview
+      }, {
+        affiche: data.results[14].poster_path,
+        titre: data.results[14].title,
+        dateDeSortie: data.results[14].release_date,
+        description: data.results[14].overview
+      }, {
+        affiche: data.results[15].poster_path,
+        titre: data.results[15].title,
+        dateDeSortie: data.results[15].release_date,
+        description: data.results[15].overview
+      }, {
+        affiche: data.results[16].poster_path,
+        titre: data.results[16].title,
+        dateDeSortie: data.results[16].release_date,
+        description: data.results[16].overview
+      }, {
+        affiche: data.results[17].poster_path,
+        titre: data.results[17].title,
+        dateDeSortie: data.results[17].release_date,
+        description: data.results[17].overview
+      }, {
+        affiche: data.results[18].poster_path,
+        titre: data.results[18].title,
+        dateDeSortie: data.results[18].release_date,
+        description: data.results[18].overview
+      }, {
+        affiche: data.results[19].poster_path,
+        titre: data.results[19].title,
+        dateDeSortie: data.results[19].release_date,
+        description: data.results[19].overview
+      }
+      ]
 
-
-
-
-        
-        var tab=new Array();
-        
-        this.film.nbfilm = data.results.length;
-        this.film.affiche=data.results[0].poster_path;
-        this.film.affiche1=data.results[1].poster_path;
-        this.film.affiche2=data.results[2].poster_path;
-        this.film.affiche3=data.results[3].poster_path;
-        this.film.affiche4=data.results[4].poster_path;
-        this.film.affiche5=data.results[5].poster_path;
-        this.film.affiche6=data.results[6].poster_path;
-        this.film.affiche7=data.results[7].poster_path;
-        this.film.affiche8=data.results[8].poster_path;
-        this.film.affiche9=data.results[9].poster_path;
-
-
-        this.film.titre=data.results[0].title;
-        this.film.titre1=data.results[1].title;
-        this.film.titre2=data.results[2].title;
-        this.film.titre3=data.results[3].title;
-        this.film.titre4=data.results[4].title;
-        this.film.titre5=data.results[5].title;
-        this.film.titre6=data.results[6].title;
-        this.film.titre7=data.results[7].title;
-        this.film.titre8=data.results[8].title;
-        this.film.titre9=data.results[9].title;
-
-        this.film.dateDeSortie=data.results[0].release_date;
-        this.film.dateDeSortie1=data.results[1].release_date;
-        this.film.dateDeSortie2=data.results[2].release_date;
-        this.film.dateDeSortie3=data.results[3].release_date;
-        this.film.dateDeSortie4=data.results[4].release_date;
-        this.film.dateDeSortie5=data.results[5].release_date;
-        this.film.dateDeSortie6=data.results[6].release_date;
-        this.film.dateDeSortie7=data.results[7].release_date;
-        this.film.dateDeSortie8=data.results[8].release_date;
-        this.film.dateDeSortie9=data.results[9].release_date;
-
-        this.film.description=data.results[0].overview;
-        this.film.description1=data.results[1].overview;
-        this.film.description2=data.results[2].overview;
-        this.film.description3=data.results[3].overview;
-        this.film.description4=data.results[4].overview;
-        this.film.description5=data.results[5].overview;
-        this.film.description6=data.results[6].overview;
-        this.film.description7=data.results[7].overview;
-        this.film.description8=data.results[8].overview;
-        this.film.description9=data.results[9].overview;
-
-
-
-        
-        /*for (let i in data.results.length) {
-          this.film.affiche[i]=
+        /*this.film.nbfilm = data.results.length
+        for (let pas = 0; pas < data.results.length; pas++) {
+          this.film.affiche.push(data.results[pas].poster_path);
+          this.film.titre.push(data.results[pas].title);
+          this.film.dateDeSortie.push(data.results[pas].release_date);
+          this.film.description.push(data.results[pas].overview);        
         }*/
-       })
-     
-        }
-  
-  
-  
-
-
+      })
+    }
 }
  

@@ -1,24 +1,17 @@
 <div class="donut-main">
-  <h4>film à l'affiche</h4>
+  
+  <h4>Film à l'affiche</h4>
         <!--ici il faudra mettre l api-->
-  <div class="affiche">
-  <div class='slider'>
+    <div class="affiche">
+    <div class='slider'>
     <div class='slides'>
-      <div class='slide'><img height="450" width="300" src="https://image.tmdb.org/t/p/w500/{{film.affiche}}" alt="pic" /></div>
-      <div class='slide'><img height="450" width="300" src="https://image.tmdb.org/t/p/w500/{{film.affiche1}}" alt="pic" /></div>
-      <div class='slide'><img height="450" width="300" src="https://image.tmdb.org/t/p/w500/{{film.affiche2}}" alt="pic" /></div>
-      <div class='slide'><img height="450" width="300" src="https://image.tmdb.org/t/p/w500/{{film.affiche3}}" alt="pic" /></div>
-      <div class='slide'><img height="450" width="300" src="https://image.tmdb.org/t/p/w500/{{film.affiche4}}" alt="pic" /></div>
-      <div class='slide'><img height="450" width="300" src="https://image.tmdb.org/t/p/w500/{{film.affiche5}}" alt="pic" /></div>
-      <div class='slide'><img height="450" width="300" src="https://image.tmdb.org/t/p/w500/{{film.affiche6}}" alt="pic" /></div>
-      <div class='slide'><img height="450" width="300" src="https://image.tmdb.org/t/p/w500/{{film.affiche7}}" alt="pic" /></div>
-      <div class='slide'><img height="450" width="300" src="https://image.tmdb.org/t/p/w500/{{film.affiche8}}" alt="pic" /></div>
-      <div class='slide'><img height="450" width="300" src="https://image.tmdb.org/t/p/w500/{{film.affiche9}}" alt="pic" /></div>
-
-      
+        <div class='slide'><img id='photo' height="450" width="300" *ngFor="let listeAffiche of film2" src="https://image.tmdb.org/t/p/w500/{{listeAffiche.affiche}}" alt="pic" /></div>
     </div>
   </div>
+
   </div>
+
+  
 </div>
 <!--NEW EARNING STATS -->
 
@@ -31,23 +24,9 @@
     
     <div class='desc'>
       <div class='slides'>
-        <div class='text'>{{ film.titre }}</div>
-        <div class='text'>{{ film.titre1 }}</div>
-        <div class='text'>{{ film.titre2 }}</div>
-        <div class='text'>{{ film.titre3 }}</div>
-        <div class='text'>{{ film.titre4 }}</div>
-        <div class='text'>{{ film.titre5 }}</div>
-        <div class='text'>{{ film.titre6 }}</div>
-        <div class='text'>{{ film.titre7 }}</div>
-        <div class='text'>{{ film.titre8}}</div>
-        <div class='text'>{{ film.titre9 }}</div>
-
-                 
+            <div id='date' class='text' *ngFor="let listeTitre of film2">{{listeTitre.titre}}</div>
       </div>
     </div>
-
-
-
   </div>
 </div>
 <!-- Second Activity -->
@@ -57,24 +36,10 @@
   <div class="details">
     
     <div class='desc'>
-      <div class='slides'>
-        <div class='text'>{{ film.dateDeSortie }}</div>
-        <div class='text'>{{ film.dateDeSortie1 }}</div>
-        <div class='text'>{{ film.dateDeSortie2 }}</div>
-        <div class='text'>{{ film.dateDeSortie3 }}</div>
-        <div class='text'>{{ film.dateDeSortie4 }}</div>
-        <div class='text'>{{ film.dateDeSortie5 }}</div>
-        <div class='text'>{{ film.dateDeSortie6 }}</div>
-        <div class='text'>{{ film.dateDeSortie7 }}</div>
-        <div class='text'>{{ film.dateDeSortie8}}</div>
-        <div class='text'>{{ film.dateDeSortie9 }}</div>
-
-                 
-      </div>
+          <div class='slides'>
+            <div id='date' class='text' *ngFor="let listeDate of film2">{{listeDate.dateDeSortie}}</div>
+          </div>
     </div>
-
-
-
   </div>
 </div>
 <!-- Third Activity -->
@@ -85,18 +50,7 @@
     
     <div class='desc'>
       <div class='slides'>
-        <div class='text'>{{ film.description }}</div>
-        <div class='text'>{{ film.description1 }}</div>
-        <div class='text'>{{ film.description2 }}</div>
-        <div class='text'>{{ film.description3 }}</div>
-        <div class='text'>{{ film.description4 }}</div>
-        <div class='text'>{{ film.description5 }}</div>
-        <div class='text'>{{ film.description6 }}</div>
-        <div class='text'>{{ film.description7 }}</div>
-        <div class='text'>{{ film.description8 }}</div>
-        <div class='text'>{{ film.description9 }}</div>
-
-                 
+          <div id='description' class='text' *ngFor="let listeDescription of film2">{{listeDescription.description}}</div>
       </div>
     </div>
 

@@ -9,7 +9,6 @@
 
 .description{
     margin-left: 75px;
-
     text-align: center;
     font-family: 'Raleway', sans-serif;
 }
@@ -20,8 +19,8 @@
     
 }
 .slides{
-    width: calc(300px *10);
-    animation: glisse 60s infinite;
+    width: calc(300px *20);
+    animation: glisse 120s infinite;
 }
 
 .desc{
@@ -56,35 +55,67 @@
     0%{
         transform: translateX(0);
     }
-    10%{
+    5%{
         transform: translateX(-300px);
     }
-    20%{
+    10%{
         transform: translateX(-600px);
     }
-    30%{
+    15%{
         transform: translateX(-900px);
     }
-    40%{
+    20%{
         transform: translateX(-1200px);
     }
-    50%{
+    25%{
         transform: translateX(-1500px);
     }
-    60%{
+    30%{
         transform: translateX(-1800px);
     }
-    70%{
+    35%{
         transform: translateX(-2100px);
     }
-    80%{
+    40%{
         transform: translateX(-2400px);
     }
-    90%{
+    45%{
         transform: translateX(-2700px);
     }
    
+    50%{
+        transform: translateX(-3000px);
+    }
+
+    55%{
+        transform: translateX(-3300px);
+    }
+    60%{
+        transform: translateX(-3600px);
+    }
+    65%{
+        transform: translateX(-3900px);
+    }
+    70%{
+        transform: translateX(-4200px);
+    }
+    75%{
+        transform: translateX(-4500px);
+    }
+    80%{
+        transform: translateX(-4800px);
+    }
+    85%{
+        transform: translateX(-5100px);
+    }
+    90%{
+        transform: translateX(-5400px);
+    }
+    95%{
+        transform: translateX(-5700px);
+    }
     100%{
         transform: translateX(0);
     }
+   
 }
