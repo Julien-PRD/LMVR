@@ -14,7 +14,7 @@ Fonctionnalités :
 - Une liste des évènements en cours
 - Une sélélection de films récents
 
-API utilisée :
+API utilisées :
 - Open Weather
 - CoronavirusAPI-France
 - Evenements Publics - OpenAgenda
